@@ -1,9 +1,34 @@
+# Dependencies
 node_modules/
 client/node_modules/
 server/node_modules/
+
+# Build output
 client/build/
+dist/
+
+# Environment variables
 .env
 .env.local
-.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+client/.env
+client/.env.local
+client/.env.production
+
+# Logs
 *.log
+npm-debug.log*
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Misc
+.cache/

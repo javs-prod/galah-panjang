@@ -548,7 +548,7 @@ io.on('connection', (socket) => {
       // Vertical defender (D1): only UP/DOWN — moves col (Y on screen), row locked
       // Can move freely up to goal, but cannot cross into start zone (col <= 2)
       if (def.direction === 'vertical') {
-        const D1_MIN = 4;  // just above start zone
+        const D1_MIN = 3;  // just above start zone
         if      (direction === 'up')   def.col = Math.min(GRID_COLS - 1, def.col + STEP);
         else if (direction === 'down') def.col = Math.max(D1_MIN, def.col - STEP);
         // ignore left/right entirely
