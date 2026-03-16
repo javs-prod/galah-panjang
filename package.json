@@ -1,0 +1,25 @@
+{
+  "name": "galah-panjang",
+  "version": "1.0.0",
+  "description": "Online Multiplayer Galah Panjang Game",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev:server": "node server/server.js",
+    "dev:client": "cross-env HOST=0.0.0.0 BROWSER=none npm start --prefix client",
+    "dev": "node start-dev.js",
+    "start:server": "npm start --prefix server",
+    "build:client": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3"
+  },
+  "keywords": [
+    "galah-panjang",
+    "multiplayer",
+    "game",
+    "traditional",
+    "malaysia"
+  ],
+  "license": "MIT"
+}
