@@ -580,7 +580,7 @@ io.on('connection', (socket) => {
     if (!def) return;
     if (def.grabCooldown > 0) return;
 
-    def.grabCooldown = 2; // 2-second cooldown
+    def.grabCooldown = 0.5; // 0.5-second cooldown
     io.to(room.id).emit('defender_grab', { defenderId: socket.id, dir, defCol: def.col, defRow: def.row });
 
     // Check grab tag on attackers
